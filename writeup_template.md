@@ -17,10 +17,10 @@ One way to highlight these lanes is to convert the original image to grayscale. 
  Therefore, an alternative conversion to HSV space before applying the Gaussian blur and a color mask to retain yellow and white colors among a certain interval allowed to solve this problem.
 
 An example of a color highlighting of both white and yellow masks is illustrated in Figure 1.
-![alt text][figure1]
+![alt text][figure1 | width=100]
 
 Once the input image is preprocessed to enhance the features of interest, a canny edge detection filter is applied, that output a binary image which consists of object edges within the range of low and high thresholds.
-![alt text][figure2]
+![alt text][figure2 | width=100]
 Furthermore, a bitwise mask is applied in order to maintain only edges within the region of interest. Given the fixed position of the camera filming the road, lanes are most likely to appear in a triangular area of the lower half of the image. A mask is applied to maintain edges in this region and ignore the rest. 
 
 The following step consists of applying a hough transform on the masked edge binary image, given a set of parameters (rho, theta, voting_threshold, min_line_length, max_gap) in order to optimize line detection. Except for the angle theta, the same set of parameters was used on both images and videos for lane detection.
