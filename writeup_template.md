@@ -1,12 +1,12 @@
 # **Finding Lane Lines on the Road** 
 
 [//]: # (Image References)
-
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [Figure 1]: ./test_images/output/color_mask_pp.jpg "Color mask"
 [Figure 2]: ./test_images/output/masked_edges.jpg "Masked edges"
 ---
 
+![alt text][image1]
 ### Reflection
 
 ### 1. Pipeline and resoning:
